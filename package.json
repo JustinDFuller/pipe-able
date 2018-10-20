@@ -1,0 +1,31 @@
+{
+  "name": "pipe-able",
+  "version": "0.0.1",
+  "description": "Create a pipe-able program. stdin goes to your function, your function return goes to stdout.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"it should say hello world\" && node test/hello.js | node test/world.js",
+    "lint": "prettier --single-quote --write \"{lib,test}/*.js\" && standard {lib,test}/*.js --fix",
+    "pretest": "npm run lint",
+    "prepublish": "npm test"
+  },
+  "keywords": [
+    "stdin",
+    "stdout",
+    "pipe",
+    "compose",
+    "stream",
+    "process",
+    "read",
+    "write"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "get-stdin": "^6.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3",
+    "standard": "^12.0.1"
+  }
+}
