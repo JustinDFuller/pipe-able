@@ -4,7 +4,7 @@ Easily create a pipe-able program.
 
 `npm install pipe-program --save`
 
-`yard add pipe-program`
+`yarn add pipe-program`
 
 ## Why
 
