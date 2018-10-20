@@ -1,10 +1,15 @@
 {
   "name": "pipe-program",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create a pipe-able program. stdin goes to your function, your function return goes to stdout.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"it should say hello world\" && node test/hello.js | node test/world.js",
+    "test": "npm run test-sync && npm run test-async && npm run test-stream && npm run test-error-async && npm run test-error",
+    "test-sync": "echo \"it should print: hello world\" && node test/hello.js | node test/world.js",
+    "test-async": "echo \"it should print: async works in the console\" && node test/async.js ",
+    "test-stream": "echo \"it should print: the contents of package.json\" && echo -n \"../package.json\" | node test/stream.js",
+    "test-error-async": "echo \"It should print: the promise was rejected\" && node test/async-error.js",
+    "test-error": "echo \"It should print: This is a sync error.\" && node test/sync-error.js",
     "lint": "prettier --single-quote --write \"{lib,test}/*.js\" && standard {lib,test}/*.js --fix",
     "pretest": "npm run lint",
     "prepublish": "npm test"
@@ -19,7 +24,7 @@
     "read",
     "write"
   ],
-  "author": "",
+  "author": "Justin Fuller <justindanielfuller@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "get-stdin": "^6.0.0"
