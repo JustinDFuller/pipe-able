@@ -1,5 +1,5 @@
 {
-  "name": "pipe-able",
+  "name": "pipe-program",
   "version": "0.0.1",
   "description": "Create a pipe-able program. stdin goes to your function, your function return goes to stdout.",
   "main": "lib/index.js",

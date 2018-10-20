@@ -1,5 +1,5 @@
-const pipeAble = require('../')
+const pipeProgram = require('../')
 
-module.exports = pipeAble(function () {
+module.exports = pipeProgram(function () {
   return 'hello'
 })

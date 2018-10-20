@@ -1,5 +1,5 @@
-const pipeAble = require('../')
+const pipeProgram = require('../')
 
-module.exports = pipeAble(function (input) {
+module.exports = pipeProgram(function (input) {
   return input + ' world'
 })
