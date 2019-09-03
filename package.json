@@ -27,11 +27,11 @@
   "author": "Justin Fuller <justindanielfuller@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "get-stdin": "^6.0.0"
+    "get-stdin": "^7.0.0"
   },
   "devDependencies": {
     "prettier": "^1.14.3",
-    "standard": "^12.0.1"
+    "standard": "^14.1.0"
   },
   "repository": {
     "type": "git",
