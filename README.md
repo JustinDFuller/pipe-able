@@ -1,5 +1,7 @@
 # pipe-program
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/JustinDFuller/pipe-program.svg)](https://greenkeeper.io/)
+
 Easily create a pipe-able program. 
 
 `npm install pipe-program --save`
